@@ -10,19 +10,17 @@
 <table>
     <thead>
     <tr>
-    <tr>Id</tr>
-    <tr>First Name</tr>
-    <tr>Last name</tr>
+    <th>Id</th>
+    <th>First Name</th>
+    <th>Last name</th>
     </tr>
     </thead>
     <tbody>
 
-    <tr th:each="vet : ${vets}"></tr>
+    <tr th:each="vet : ${vets}">
         <td th:text="${vet.id}">1</td>
         <td th:text="${vet.firstName}">Ja</td>
         <td th:text="${vet.lastName}">L</td>
-    </tr>
-    </tbody>
     </tr>
     </tbody>
 </table>

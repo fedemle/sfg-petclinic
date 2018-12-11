@@ -5,7 +5,26 @@
     <title>Pet Clinic index</title>
 </head>
 <body>
+<!--/*@thymesVar id="vet" type="guru.springframework.sfgpetclinic.model.Vet"*/-->
 <h1 th:text="'index page'">index page</h1>
+<table>
+    <thead>
+    <tr>
+    <tr>Id</tr>
+    <tr>First Name</tr>
+    <tr>Last name</tr>
+    </tr>
+    </thead>
+    <tbody>
 
+    <tr th:each="vet : ${vets}"></tr>
+        <td th:text="${vet.id}">1</td>
+        <td th:text="${vet.firstName}">Ja</td>
+        <td th:text="${vet.lastName}">L</td>
+    </tr>
+    </tbody>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

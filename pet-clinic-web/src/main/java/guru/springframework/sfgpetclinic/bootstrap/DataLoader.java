@@ -50,7 +50,6 @@ public class DataLoader implements CommandLineRunner {
         mikesPet.setName("rosco");
         owner1.getPets().add(mikesPet);
 
-
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
@@ -87,7 +86,6 @@ public class DataLoader implements CommandLineRunner {
         vetService.save(vet2);
 
         System.out.println("LOoaded vets");
-
 
     }
 }
